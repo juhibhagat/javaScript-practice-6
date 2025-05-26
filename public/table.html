@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload(){
+        var tr = document.createElement("tr");
+       var td1 = document.createElement("td");
+       var td2 =document.createElement("td");
+       var td3 = document.createElement("td");
+
+       td1.innerHTML='1';
+       td2.innerText ='Juhi';
+       td3.innerText ='8863820396';
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        
+        document.querySelector("tbody").appendChild(tr);
+
+        var tr1 =document.createElement("tr");
+        var td11 = document.createElement("td");
+        var td22 = document.createElement("td");
+        var  td33 = document.createElement("td");
+         
+
+        td11.innerHTML='2';
+        td22.innerHTML='Nitish';
+        td33.innerHTML='8651295485';
+
+        tr1.appendChild(td11);
+        tr1.appendChild(td22);
+        tr1.appendChild(td33);
+
+        document.querySelector("tbody").appendChild(tr1);
+        }
+    </script>
+</head>
+<body onload="bodyload()" >
+    <table border="border" >
+        <thead >
+            <tr>
+                <th>SR.NO</th>
+                <th>User Nmae</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>
