@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+        function bodyload() {
+            var div = document.createElement("div");
+            div.className = "card";
+            div.className = "w-50";
+            div.innerHTML = `
+            <img src="./image/images.jpeg" width="100%">
+            <div class="card-header">
+                welcome
+                </div>
+                <div> <button class="btn btn-danger w-100">Submit</button></div>
+            `
+            document.querySelector("main").appendChild(div);
+        }
+    </script>
+
+</head>
+
+<body onload="bodyload()">
+    <h2 class="text-center">Courses</h2>
+    <main>
+
+    </main>
+
+</body>
+
+</html>
