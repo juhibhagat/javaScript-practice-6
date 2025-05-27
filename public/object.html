@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        var product = {
+            "title":"Tv",
+            "price":9999,
+            "Image":"./image/images.jpeg",
+            "brand":"sumsung"
+         }
+            function bodyload(){
+                var div = document.createElement("div");
+                 div.className = "card w-50";
+                 div.innerHTML =`
+                 <div class="card-header">
+                    ${product.title}
+                    </div>
+                    <div class="card-img">
+                        <img src=${product.Image} style="width:100%;">
+                        </div>
+
+                        <div class="card-footer">
+                            ${product.brand}
+                        </div>
+                 `
+                 
+                        document.querySelector("body").appendChild(div);
+            }
+       
+    </script>
+</head>
+<body onload="bodyload()">
+    
+</body>
+</html>
