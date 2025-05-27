@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        var x = {
+            "title" : "Tv" ,
+            "Price" : 9000,
+            "brand" : "Sumsung",
+            "Size"  : "45-inch",
+            "image" : "./image/images.jpeg"
+        }
+
+        function bodyload(){
+            var div = document.createElement("div");
+            div.className ="card w-50";
+            div.innerHTML=`
+            <div class="card-img">
+                <img src=${x.image} width="100%">
+            </div>
+            <div class="card-header">
+                <h2 class="text-center">welocome</h2>
+            </div>
+            `
+            document.querySelector("main").appendChild(div);
+        }
+        
+    </script>
+</head>
+<body onload="bodyload()">
+    <main>
+
+    </main>
+    
+</body>
+</html>
