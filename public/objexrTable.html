@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        var student = {
+            "Sr": 1,
+            "Name" : "Nitish",
+            "class" : "8th",
+            "Address" : "Saharsa"
+         }
+        function bodyload(){
+            var tr = document.createElement("tr");
+            var td1 = document.createElement("td");
+            var td2 = document.createElement("td");
+            var td3 = document.createElement("td");
+            var td4 = document.createElement("td");
+
+            td1.innerHTML= student.Sr;
+            td2.innerHTML =student.Name;
+            td3.innerHTML = student.class;
+            td4.innerHTML =student.Address;
+
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            tr.appendChild(td4);
+
+            document.querySelector("tbody").appendChild(tr);
+
+
+
+        }
+
+    </script>
+</head>
+<body onload="bodyload()">
+    <table class="table table-primary border border-1 border-danger m-3">
+        <thead>
+            <tr>
+                <th>SR.NO</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</body>
+</html>
