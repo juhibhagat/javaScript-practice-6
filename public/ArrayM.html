@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var categories = ["All","Electronics","Fashion","Footwear"]
+        document.write(categories.toString() + "<br>");
+        document.write(categories.join("/") + "<br>");
+        document.write(categories.slice(1,2) +"<br>");
+
+        var categories =["All","Electonics","Fashion","Footwear"];
+
+        categories.map(function(value,index){
+            document.write(`<input value =$(index) type ="checkbox"><l>&{value}</l>`)
+        })
+
+        var sales =[5000,6000,7000,7000];
+        for(var property in sales){
+            document.write(`[${property}]${sales[property]}<br>`)
+        }
+    </script>
+</body>
+</html>
