@@ -22,6 +22,14 @@
         for(var property in sales){
             document.write(`[${property}]${sales[property]}<br>`)
         }
+
+          var value =[10,"A",true,["delhi","patna"],function(){document.write("Array function")}];
+            document.write(value[3][0]);
+            value[4]();
+
+            var value=[[10,20],[["Delhi","Hyd"]]];
+            document.write(`${value[1][0][1]}`);
+
     </script>
 </body>
 </html>
