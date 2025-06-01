@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        var arr = ["juhi","Nitish",[[10]],23,function(){console.log("welcome my website")}]
-        console.log(arr[0]);
-        console.log([2][[0][0]]);
-        arr[4]();
-        document.write(arr.toString()+"<br>");
-        document.write(arr.join("/")+"<br>");
-        document.write(arr.slice(0,4));
-    </script>
-    
+
 </head>
+
 <body>
-    
+    <script>
+        var amount = parseInt(prompt("enter Amount"));
+        var rate = parseFloat(prompt("enter Rate"));
+        var years = parseInt(prompt("enter years"));
+
+        var msg1 = "You requested for&nbsp;" + amount + "&nbsp;with interest&nbsp;" + (rate / 12 / 100) + "&nbsp;for next&nbsp;" + years + "&nbsp;years<br>";
+        var msg2 = `You requested for ${amount} with interest ${rate / 12 / 100} for next ${years} years.`;
+        var msg2 =`you request for ${amount} with intrest ${rate/12/100} for next ${years} years`
+        document.write(msg1);
+        document.write(msg2);
+    </script>
 </body>
+
 </html>
