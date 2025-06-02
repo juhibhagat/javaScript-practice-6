@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function loginclick(){
+            sessionStorage.setItem("userNmae",document.getElementById("txtName").value);
+            location.href =  "./dashboard.html";
+        }
+    </script>
+</head>
+<body>
+    <h2>User Login</h2>
+    <dl>
+        <dt>User name</dt>
+        <dt><input type="text" id="txtName"></dt>
+    </dl>
+    <button onclick="loginclick()">Login</button>
+</body>
+</html>
